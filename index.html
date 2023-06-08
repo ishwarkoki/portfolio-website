@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishwar Kokkili</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <a href="#hero" class="logo">Ishwar Kokkili</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-image">
+            <img src="/assets/male-avatar.png" alt="Hero Image">
+        </div>
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm a passionate <span id="element"></span> showcasing my work.</p>
+            <a href="https://drive.google.com/file/d/1VAwxPEHxsY1xuDglQ4t4gZ4YOQKi9eDF/view?usp=sharing" class="btn"
+                target="_blank">View Resume</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>I am a passionate web developer with expertise in HTML, CSS, and JavaScript. I love creating responsive
+                and user-friendly websites that provide a great user experience. My goal is to combine design and
+                functionality to deliver high-quality web solutions.</p>
+            <p>Skills:</p>
+            <ul class="skills">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Power BI</li>
+                <li>SQL</li>
+                <li>Python</li>
+                <li>AWS</li>
+                <li>Azure</li>
+                <li>Problem Solving</li>
+            </ul>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+        <div class="about-image">
+            <img src="/assets/hero-image.png" alt="Profile Image">
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="project-box">
+                <img src="/assets/reommender-system..png" alt="recommender systems">
+                <div class="project-overlay">
+                    <h3> Movie recommender systems</h3>
+                    <div class="buttons">
+                        <a href="#" class="btn">Live Preview</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="/assets/eda-project.png" alt="EDA On cricket Data">
+                <div class="project-overlay">
+                    <h3>Exploratory Data Analysis</h3>
+                    <div class="buttons">
+                        <a href="#" class="btn">Live Preview</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="assets/project-3.png" alt="project-3">
+                <div class="project-overlay">
+                    <h3>Project 3</h3>
+                    <div class="buttons">
+                        <a href="#" class="btn">Live Preview</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="reason">Reason for Contact:</label>
+                <textarea id="reason" name="reason" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            Made with ❤️ ©️ ishwar kokkili
+        </div>
+        <div class="footer-right">
+            <a href="https://twitter.com/IKokkili" target="_blank">
+                <img src="/assets/twitter.png" alt="Twitter" />
+            </a>
+            <a href="https://www.linkedin.com/in/ishwarkokkili/" target="_blank">
+                <img src="/assets/linkedin.png" alt="LinkedIn" />
+            </a>
+            <a href="https://github.com/ishwarkoki" target="_blank">
+                <img src="/assets/github.png" alt="GitHub" />
+            </a>
+            <a href="https://leetcode.com/ishwarkokkili/" target="_blank">
+                <img src="assets/leetcode.jpeg" alt="LeetCode" />
+            </a>
+        </div>
+    </footer>
+
+    <div class="dark-mode-toggle">
+        <input type="checkbox" id="darkModeToggle" />
+        <label for="darkModeToggle"></label>
+    </div>
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['web developer', 'Data Engineer', 'Data Analyst', 'ML Engineer'],
+            typeSpeed: 50,
+            loop: true
+        });
+
+    </script>
+
+</body>
+
+</html>
